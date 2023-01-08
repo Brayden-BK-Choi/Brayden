@@ -121,7 +121,7 @@ def condition_rsi_stoch(ticker):
    
     
 
-    if rsi_1 < 45:
+    if rsi_1 < 35:
         if stochrsi_D.iloc[-1]*100 < 15:
             text=str(ticker) + '의 rsi는 ' + str(rsi_1) + '이고 ' + 'stochrsi는 ' + str(stochrsi_D.iloc[-1]*100) + '입니다'
             print(text)
