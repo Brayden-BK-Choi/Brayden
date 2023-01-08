@@ -121,9 +121,9 @@ def condition_rsi_stoch(ticker):
    
     
 
-    if rsi_1 < 35:
+    if rsi_1 < 40:
         if stochrsi_K.iloc[-1]*100 < 25:
-            text=str(ticker) + '의 rsi는 ' + str(rsi_1) + '이고 ' + 'stochrsi는 ' + str(stochrsi_K.iloc[-1]*100) + '입니다'
+            text=str(ticker) + '의 rsi는 ' + str(rsi_1) + '이고 ' + 'stochrsi는 ' + str(stochrsi_K.iloc[-1]*100) + '이고 현재 가격은 ' + str(price) + '원 입니다.'
             print(text)
             
             send_message(text, chat_id)
